@@ -35,6 +35,11 @@ class AuthenticationService {
     if (user === null) return false;
     return true;
   }
+  hasRole(role) {
+    const roles = sessionStorage.getItem("roles").split(",");
+    if (roles.includes(role)) return true;
+    return false;
+  }
   async setupAxiosInterceptors() {
     axios.interceptors.request.use((config) => {
       if (this.isUserLoggedIn) {
