@@ -15,7 +15,10 @@ class LoginComponent extends Component {
   render() {
     return (
       <>
-        <div className="row justify-content-center align-items-center p-5">
+        <div
+          className="row justify-content-center align-items-center p-5"
+          style={{ marginLeft: "0px", marginRight: "0px" }}
+        >
           <div className="col-md-4 col-sm-12">
             <form className="card p-5">
               <h1>Login</h1>

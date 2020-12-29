@@ -56,7 +56,6 @@ class PurchaseComponent extends Component {
         longitude: this.state.currentLocation.lat.toFixed(6),
         latitude: this.state.currentLocation.lng.toFixed(6),
       });
-      console.log(purchase);
       this.setState({ purchase });
       this.setState({ success: true });
     } catch (error) {
